@@ -28,4 +28,13 @@
 }
 
 .profile-card:hover .location,
-.profile-card:focus-within .locati
+.profile-card:focus-within .location {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .container .profile-card,
+  .profile-card .location {
+    transition: none;
+  }
+}
